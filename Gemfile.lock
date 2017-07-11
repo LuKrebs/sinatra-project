@@ -13,8 +13,12 @@ GEM
     debug_inspector (0.0.3)
     erubis (2.7.0)
     method_source (0.8.2)
+    mini_portile2 (2.2.0)
     multi_json (1.12.1)
     mustermann (1.0.0)
+    nokogiri (1.8.0)
+      mini_portile2 (~> 2.2.0)
+    open_uri_redirections (0.2.1)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -46,6 +50,8 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
+  nokogiri
+  open_uri_redirections (~> 0.2.1)
   pry-byebug
   sinatra (= 2.0.0.rc1)
   sinatra-contrib (= 2.0.0.rc1)

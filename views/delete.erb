@@ -1,0 +1,19 @@
+<div class="text-center options">
+  <h3 class="text-center">Here's all your recipes:</h3>
+    <% @recipes.each_with_index do |recipe, i| %>
+    <div class="options">
+        <li class="text-left recipes">
+          <%= i + 1 %>
+          <%= recipe.name %>
+        </li>
+    </div>
+  <% end %>
+</div>
+
+<div class="text-center options">
+  <form action="/delete">
+    <p>Please, enter the number of the recipe to delete <input type="text" name="delete_number"/></p>
+    <input type="submit">
+  </form>
+</div>
+<a href="/" class="btn btn-lrg">Return</a>

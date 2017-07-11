@@ -1,0 +1,22 @@
+<div class="text-center options">
+  <h3 class="text-center">Here's all your recipes:</h3>
+    <% @recipes.each do |recipe| %>
+    <div class="options">
+    <li class="text-left recipes">
+      <%= recipe.name %>
+      <ul>
+        <li>
+          <%= recipe.description %>
+        </li>
+        <li>
+          <%= recipe.time %> minutes
+        </li>
+        <li>
+          <%= recipe.difficult %>
+        </li>
+      </ul>
+    </li>
+    </div>
+  <% end %>
+  <a href="/" class="btn btn-lrg">Return</a>
+</div>

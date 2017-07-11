@@ -1,0 +1,26 @@
+<div class="text-center">
+  <form action="/import">
+    <p>Import recipes for which ingredient? </p>
+    <p><input type="text" name="import_word"/></p>
+    <input type="submit">
+  </form>
+  <a style="cursor: pointer" class="btn btn-lg" id="trig">Click here to import Recipes </a>
+</div>
+<div class="text-center">
+    <ol>
+    <% @request2.each do |recipe| %>
+        <li class="text-left recipes">
+          <%= recipe %>
+        </li>
+    <% end %>
+    </ol>
+</div>
+<div class="text-center last">
+  <form action="/import">
+    <p>Enter a number:</p>
+    <p><input type="text" name="import_number"/></p>
+    <p>Please, reenter the name of the food:</p>
+    <p><input type="text" name="import_word"/></p>
+    <input type="submit">
+  </form>
+</div>
