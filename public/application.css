@@ -1,0 +1,58 @@
+body {
+  height: 100vh;
+  background-color: rgb(216, 10, 24);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+li.recipes a {
+  color: black !important;
+}
+
+li.recipes a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+a.btn  {
+  border: 2px solid rgb(216, 10, 24);
+  background-color: white;
+  color: rgb(216, 10, 24);
+  font-weight: 600;
+  margin: 10px auto;
+}
+
+a.btn:hover {
+  background-color: rgb(216, 10, 24);
+  color: white;
+  border: 2px solid white;
+  transition: 0.6s;
+}
+
+.options {
+  background-color: rgb(216, 10, 24);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 15px auto;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+.options:hover {
+  border: 2px solid rgb(216, 10, 24);
+  background-color: white;
+  transition: 0.5s;
+}

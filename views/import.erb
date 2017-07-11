@@ -1,15 +1,15 @@
 <div class="text-center">
   <form action="/import">
     <p>Import recipes for which ingredient? </p>
-    <p><input type="text" name="import_word"/></p>
-    <input type="submit">
+    <p><input type="text" name="import_word" class="form-control" /></p>
+    <input type="submit" class="btn">
   </form>
   <a style="cursor: pointer" class="btn btn-lg" id="trig">Click here to import Recipes </a>
 </div>
 <div class="text-center">
     <ol>
     <% @request2.each do |recipe| %>
-        <li class="text-left recipes">
+        <li class="text-left recipes" style="color: black !important;">
           <%= recipe %>
         </li>
     <% end %>
@@ -21,6 +21,7 @@
     <p><input type="text" name="import_number"/></p>
     <p>Please, reenter the name of the food:</p>
     <p><input type="text" name="import_word"/></p>
-    <input type="submit">
+    <input type="submit" id="food">
   </form>
 </div>
+<a href="/" class="btn btn-lrg">Return</a>
